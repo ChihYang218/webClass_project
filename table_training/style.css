@@ -1,0 +1,64 @@
+th,
+td {
+  border: 2px solid black;
+}
+
+th {
+  font-size: 40px;
+}
+
+table {
+  margin: 0 auto;
+  border: 5px solid brown;
+  width: 1300px;
+}
+
+.font_def {
+  font-size: 30px;
+}
+
+.important_txt {
+  color: red;
+  font-size: 70px;
+}
+
+.idol_blue {
+  color: blue;
+  font-size: 120px;
+}
+
+.ver {
+  writing-mode: vertical-lr;
+}
+
+img {
+  width: 100%;
+}
+
+.myImg_td {
+  width: 40%;
+}
+
+.idolImg_td {
+  width: 20%;
+}
+
+tr th {
+  width: 15%;
+}
+
+.idol_txt {
+  font-size: 70px;
+}
+
+.hart {
+  width: 200px;
+}
+
+.li_hover:hover {
+  color: red;
+}
+
+ol li:hover {
+  font-size: 40px;
+}
