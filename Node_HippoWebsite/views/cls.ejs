@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <%- include('./partials/lib.ejs') %>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+  </head>
+  <body>
+    <header>
+      <%- include('./partials/header.ejs') %>
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <div class="container-fluid">
+          <!-- 動態縮起list -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler1" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- 用collapse讓list直接消失 -->
+          <div class="collapse navbar-collapse" id="navbarToggler">
+            <!-- Links -->
+            <ul class="navbar-nav nav-tabs me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link" href="/">介紹</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/cls">分類</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/feature">特徵</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/habits">習性</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/distributed">分佈</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="row">
+      <div class="col-md-2">
+        <nav class="navbar nav-pills nav-fill navbar-expand-sm bg-white navbar-white">
+          <div class="container-fluid">
+            <ul class="navbar-nav nav-pills flex-column">
+              <li class="nav-item nav-li">
+                <a class="nav-link" href="/">介紹</a>
+              </li>
+              <li class="nav-item nav-li">
+                <a class="nav-link active" href="/cls">分類</a>
+              </li>
+              <li class="nav-item nav-li">
+                <a class="nav-link" href="/feature">特徵</a>
+              </li>
+              <li class="nav-item nav-li">
+                <a class="nav-link" href="/habits">習性</a>
+              </li>
+              <li class="nav-item nav-li">
+                <a class="nav-link" href="/distributed">分佈</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="col-md-10">
+        <div class="container-fluid body-text">
+          <h3>依據顱骨外型以及分布地理位置可分為五個亞種：</h3>
+          <ul>
+            <li class="body-li">北方河馬（尼羅河馬） H. a. amphibius：為指名亞種，分布地區包括埃及（埃及區域現已滅絕）至坦尚尼亞與莫三比克一帶的尼羅河流域</li>
+            <li class="body-li">東非河馬 H. a. kiboko：分布地區包括肯亞大湖地區與非洲之角的索馬利亞，鼻部較寬，眶間隔較為深陷。</li>
+            <li class="body-li">南非河馬 H. a. capensis：分布地區自尚比亞至南非，頭顱骨較扁平。</li>
+            <li class="body-li">西非河馬（查德河馬） H. a. tschadensis：遍布西非以及查德，頭顱較為寬短，具有較突出的眼眶。</li>
+            <li class="body-li">安哥拉河馬 H. a. constrictus：分布地區包括安哥拉、納米比亞與剛果民主共和國南部，具有較收束的前眶骨。</li>
+          </ul>
+          <h3>演化</h3>
+          <p>直到1909年前，自然歷史學家透過大臼齒樣式的相似性將河馬與豬分類為同一群。然而諸多證據，
+            包括血液蛋白質、分子系統發生學、DNA與化石紀錄，都顯示河馬現存關係親緣最近的類群為鯨豚類。
+            河馬與鯨豚的共同祖先自反芻亞目分化，而在不久之後河馬與鯨豚也分別分化為兩個獨立的演化支。</p>
+          <img class="cls-img" src="/images/cls.png" alt="演化關係圖">
+          <p>最新的理論認為河馬與鯨豚的半水生共同祖先最早於6000萬年前與其他偶蹄類動物分化而河馬與鯨豚之間則是於5400萬年前形成兩獨立的演化支。
+            一個分支將進化成鯨目動物，可能始於大約5200萬年前，原鯨魚和其他早期鯨魚祖先統稱為古鯨小目。這個群體最終經歷了水生適應，成為完全水生的鯨類。另一個分支變成了石炭獸科(下圖)，一，其中最早的在始新世晚期類似於瘦小的河馬，頭部相對較小，更窄的分支，除了進化成河馬科的分支，其他都沒有留下後代。
+          </p>
+          <img class="cls-img" src="/images/cls2.jpeg" alt="石炭獸">
+          </div>
+      </div>
+    </div>
+    <footer>
+      <div class="foot text-center">
+        <h1>Made by C.Y.江</h1>
+      </div>
+    </footer>
+  </body>
+</html>

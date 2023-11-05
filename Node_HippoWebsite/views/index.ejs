@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <%- include('./partials/lib.ejs') %>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+  <header>
+    <%- include('./partials/header.ejs') %>
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <div class="container-fluid">
+          <!-- 動態縮起list -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+            aria-controls="navbarToggler1" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- 用collapse讓list直接消失 -->
+          <div class="collapse navbar-collapse" id="navbarToggler">
+            <!-- Links -->
+            <ul class="navbar-nav nav-tabs me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="/">介紹</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/cls">分類</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/feature">特徵</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/habits">習性</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/distributed">分佈</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  </header>
+  <div class="row">
+    <div class="col-md-2">
+      <nav class="navbar nav-pills nav-fill navbar-expand-sm bg-white navbar-white">
+        <div class="container-fluid">
+          <ul class="navbar-nav nav-pills flex-column">
+            <li class="nav-item nav-li">
+              <a class="nav-link active" href="/">介紹</a>
+            </li>
+            <li class="nav-item nav-li">
+              <a class="nav-link" href="/cls">分類</a>
+            </li>
+            <li class="nav-item nav-li">
+              <a class="nav-link" href="/feature">特徵</a>
+            </li>
+            <li class="nav-item nav-li">
+              <a class="nav-link" href="/habits">習性</a>
+            </li>
+            <li class="nav-item nav-li">
+              <a class="nav-link" href="/distributed">分佈</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="col-md-10">
+      <div class="container-fluid body-text">
+        <h3>河馬（學名：Hippopotamus amphibius）</h3>
+        <img class="cls-img" src="/images/index.jpeg" alt="河馬">
+        <p>是偶蹄目、河馬科下的一種大型植食性[註 1]半水生哺乳動物，河馬屬的唯一現生種，產自撒哈拉以南非洲，
+          棲息於熱帶草原地區的河湖池沼。河馬儘管外形似豬，但實際與鯨豚類的親緣關係更近。在現存的非海洋動物中，
+          河馬的平均體型僅次於3種大象、白犀和印度犀，也是除鯨類以外現存最大的偶蹄目。
+          雄性的成年平均體重約1.5噸，雌性約1.3噸。看似身軀笨重，但能以每小時30公里的速度進行衝刺。
+        </p>
+        <p>河馬的軀幹肥圓呈桶狀，除吻部、尾、耳有稀疏的毛外，全身皮膚裸露，呈深灰色與肉紅色相間；
+          表皮厚而光滑；尾短小；四肢粗短，每足4趾；頭碩大；耳較小，立於頭頂；嘴
+          和牙齒極大，尤其是下顎的一對犬齒，長度可達30公分。
+        </p>
+        <p>常由十餘頭組成群體，有時也能結成上百頭的大群。幾乎整個白晝都在水中度過，夜間上岸吃草。
+          妊娠期約8個月，每胎1崽，哺乳期1年；雌性和雄性的性成熟年齡分別在4－6歲和7.5歲左右；自然壽命30－40年。
+        </p>
+        <p>河馬的主要生存威脅是棲息地的喪失，同時人類會為了牟取河馬的肉與犬齒而獵殺牠們。現為瀕危野生動植物種國際貿易公約附錄II所列的保護動物。</p>
+        <h3>名稱</h3>
+        <p>河馬屬的學名「Hippopotamus」源自於希臘語「ιπποπόταμος」（英文名稱即hippopotamus，希臘語的hippos即「馬」，potamus即「河」），英文常縮寫為「hippo」。</p>
+      </div>
+    </div>
+    <footer>
+      <div class="foot text-center">
+        <h1>Made by C.Y.江</h1>
+      </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <%- include('./partials/lib.ejs') %>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+  </head>
+  <body>
+    <header>
+      <%- include('./partials/header.ejs') %>
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <div class="container-fluid">
+          <!-- 動態縮起list -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler1" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- 用collapse讓list直接消失 -->
+          <div class="collapse navbar-collapse" id="navbarToggler">
+            <!-- Links -->
+            <ul class="navbar-nav nav-tabs me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link" href="/">介紹</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/cls">分類</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/feature">特徵</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/habits">習性</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/distributed">分佈</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="row">
+      <div class="col-md-2">
+        <nav class="navbar nav-pills nav-fill navbar-expand-sm bg-white navbar-white">
+          <div class="container-fluid">
+            <ul class="navbar-nav nav-pills flex-column">
+              <li class="nav-item nav-li">
+                <a class="nav-link" href="/">介紹</a>
+              </li>
+              <li class="nav-item nav-li">
+                <a class="nav-link" href="/cls">分類</a>
+              </li>
+              <li class="nav-item nav-li">
+                <a class="nav-link active" href="/feature">特徵</a>
+              </li>
+              <li class="nav-item nav-li">
+                <a class="nav-link" href="/habits">習性</a>
+              </li>
+              <li class="nav-item nav-li">
+                <a class="nav-link" href="/distributed">分佈</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="col-md-10">
+        <div class="container-fluid body-text">
+        <h3>特徵</h3>
+        <p>河馬身長3－4公尺，成年雄性體重平均約1,500公斤（3,310磅），成年雌性體重約1,300公斤（2,870磅），
+          成年雄性常能達到2,000公斤（4,410磅），有紀錄之最大個體重2,660公斤（5,860磅）[11]與3,200公斤（7,050磅）。
+          雄性河馬終其一生都會不斷成長，而雌性河馬大多於25歲時達到最大體重。河馬是現存陸地上第三大動物，僅次於象與犀牛，
+          河馬雖屬草食，然而領域觀念極強且脾氣暴躁，一般認為是最具攻擊性的動物之一。
+        </p>
+        <img class="cls-img" src="/images/body.jpeg" alt="河馬身體">
+        <p>和其他半水生動物（例如水獺、水豚）不一樣的是，河馬全身幾乎無毛:260，皮層厚達6 cm（2英寸），
+          可以保護河馬不受掠食者或是同類傷害，然而牠們的皮下脂肪層卻很薄。河馬背部的皮膚為紫灰色或黑褐色，
+          腹部與眼耳周遭的皮膚則為棕粉紅色。尾部有少數的剛毛，頭大、嘴闊、耳小、尾短，前後肢都比較短，有四指、略有蹼。
+          由於河馬的顎部關節位於較後方，因此雙顎可撐開將近150度。牠們的四根獠牙長50公分，咬力可達2500磅，
+          一次可吃下100磅的植物。即使是陸地上第三大的動物，其短距離奔跑速度卻能達到時速30公里。
+        </p>
+        <p>河馬在潛水的時候，會把鼻孔和耳朵關閉起來，避免進水。</p>
+        <p>野生河馬壽命可達40–50年，然而可能因打鬥而提早結束生命。美國印第安納州伊凡斯維爾的梅斯克園動植物園一頭名為多娜（Donna）
+          的雌性河馬於2012年過世，享年61歲，為目前人工圈養環境下最長壽的河馬。
+        </p>
+        <p>雖然河馬為半水生，但河馬並不善游泳，也無法浮在水上，但它能待在水中4至5分鐘。河馬皮膚需要水分，否則會乾裂。
+          其皮膚可分泌河馬汗酸以防曬，但效果無法持續太久，故河馬通常在水中及水邊活動。
+        </p>
+        <p>儘管牠們的身體很像豬和其他陸地上的偶蹄目，牠們最親近的親戚是鯨目，如鯨魚、海豚等等。
+          鯨魚和河馬的共同祖先石炭獸類是由其他來自六千萬年前的偶蹄目分支。
+          最早的河馬化石，屬於來自非洲的肯亞河馬屬（Kenyapotamus），大約是一千六百萬年前。
+        </p>
+        <img class="cls-img" src="/images/feature.jpeg" alt="河馬頭骨">
+      </div>
+    </div>
+    <footer>
+      <div class="foot text-center">
+        <h1>Made by C.Y.江</h1>
+      </div>
+    </footer>
+  </body>
+</html>

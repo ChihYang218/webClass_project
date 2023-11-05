@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <%- include('./partials/lib.ejs') %>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+  <header>
+    <%- include('./partials/header.ejs') %>
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <div class="container-fluid">
+          <!-- 動態縮起list -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+            aria-controls="navbarToggler1" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- 用collapse讓list直接消失 -->
+          <div class="collapse navbar-collapse" id="navbarToggler">
+            <!-- Links -->
+            <ul class="navbar-nav nav-tabs me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link" href="/">介紹</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/cls">分類</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/feature">特徵</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/habits">習性</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/distributed">分佈</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  </header>
+  <div class="row">
+    <div class="col-md-2">
+      <nav class="navbar nav-pills nav-fill navbar-expand-sm bg-white navbar-white">
+        <div class="container-fluid">
+          <ul class="navbar-nav nav-pills flex-column">
+            <li class="nav-item nav-li">
+              <a class="nav-link" href="/">介紹</a>
+            </li>
+            <li class="nav-item nav-li">
+              <a class="nav-link" href="/cls">分類</a>
+            </li>
+            <li class="nav-item nav-li">
+              <a class="nav-link" href="/feature">特徵</a>
+            </li>
+            <li class="nav-item nav-li">
+              <a class="nav-link" href="/habits">習性</a>
+            </li>
+            <li class="nav-item nav-li">
+              <a class="nav-link active" href="/distributed">分佈</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="col-md-10">
+      <div class="container-fluid body-text">
+        <h3>分佈</h3>
+        <p>自伊緬間冰期至大約3萬年前，河馬廣泛分布於北非與歐洲。考古證據顯示黎凡特的河馬存活至約3000年前。
+          古典時代有許多河馬生活於埃及尼羅河流域，但如今已絕種。老普林尼在他的博物志曾寫到，在他的年代，埃及最適合捕捉河馬的地點是塞易斯地區。
+          在公元639年穆斯林的征服中，河馬仍然可以在杜姆亞特地區看到。納塔爾省的最後一隻河馬於19世紀晚期被殺害。
+          現今河馬的生存地區包括北剛果民主共和國、烏干達、坦尚尼亞與肯亞的河流與湖沼之中。最北可達衣索比亞、索馬利亞、蘇丹共和國，
+          最西可達甘比亞，最南則可達南非共和國。在馬爾他的洞中還能找到18萬年前的河馬化石。在馬達加斯加人類來到前有倭河馬。
+        </p>
+        <img class="cls-img" src="/images/pos.jpeg" alt="河馬分佈圖">
+        <p>隨著人類在非洲的擴張河馬數量正不斷減少，在2006年5月已被國際自然保護聯盟在國際自然保護聯盟瀕危物種紅色名錄中分為易危物種，
+          世界僅存約12.5萬－15萬頭，自1996年來總族群的數量已下降7－20 %。
+          人類因擴張，食肉，皮革，及河馬牙而獵殺河馬。在普遍禁止販賣象牙後，河馬因牙遭人類獵殺的數量急遽上升。
+          尚比亞（4萬頭）及坦尚尼亞（2萬－3萬頭）擁有最多的河馬。近代河馬最大的一次減少發生在剛果，從1970年的29,000頭減少到目前僅存約800頭，
+          主因為第二次剛果戰爭，飢餓的貧民及士兵為其肉或牙而大量捕殺河馬。
+        </p>
+        <p>河馬也出現在南美，哥倫比亞毒梟巴勃羅·埃斯科瓦爾曾把一些河馬養在私人動物園，後逃至野外。</p>
+      </div>
+    </div>
+    <footer>
+      <div class="foot text-center">
+        <h1>Made by C.Y.江</h1>
+      </div>
+    </footer>
+</body>
+
+</html>

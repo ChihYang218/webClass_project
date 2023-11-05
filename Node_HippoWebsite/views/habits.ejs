@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <%- include('./partials/lib.ejs') %>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+  <header>
+    <%- include('./partials/header.ejs') %>
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <div class="container-fluid">
+          <!-- 動態縮起list -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+            aria-controls="navbarToggler1" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- 用collapse讓list直接消失 -->
+          <div class="collapse navbar-collapse" id="navbarToggler">
+            <!-- Links -->
+            <ul class="navbar-nav nav-tabs me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link" href="/">介紹</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/cls">分類</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/feature">特徵</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/habits">習性</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/distributed">分佈</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  </header>
+  <div class="row">
+    <div class="col-md-2">
+      <nav class="navbar nav-pills nav-fill navbar-expand-sm bg-white navbar-white">
+        <div class="container-fluid">
+          <ul class="navbar-nav nav-pills flex-column">
+            <li class="nav-item nav-li">
+              <a class="nav-link" href="/">介紹</a>
+            </li>
+            <li class="nav-item nav-li">
+              <a class="nav-link" href="/cls">分類</a>
+            </li>
+            <li class="nav-item nav-li">
+              <a class="nav-link" href="/feature">特徵</a>
+            </li>
+            <li class="nav-item nav-li">
+              <a class="nav-link active" href="/habits">習性</a>
+            </li>
+            <li class="nav-item nav-li">
+              <a class="nav-link" href="/distributed">分佈</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="col-md-10">
+      <div class="container-fluid body-text">
+        <h3>習性</h3>
+        <p>為了保護小河馬不受鱷魚攻擊，河馬演化為群居動物，每群大約有40隻。壽命為40至50歲。
+          雌性河馬在5－6歲時發情交配，妊娠期8月，哺育期長度2年，並終生維持親密關係。
+          小河馬出生後，母河馬會將寶寶帶離河馬群約14天，好讓初生的小河馬記住母親的味道，並學習回到河馬群後，如何閃避體型龐大的成年公河馬。
+        </p>
+        <img class="cls-img" src="/images/protect.jpeg" alt="河馬與小孩">
+        <p>一般認為河馬與大象類似，均會哀悼死去的家人，曾有觀察紀錄顯示當小河馬死去時，悲傷的母河馬仍然不願放棄，不斷圍繞小河馬身邊，直到掠食者出現才離去。</p>
+        <p>河馬是半水生的，棲息在撒哈拉以南非洲的河流或湖中。白天牠們會為了保持身體濕潤而待在水中或泥沼裡；
+          公河馬具有領域性，繁殖及生產的權利皆在公河馬掌控延伸的水域中。牠們會在傍晚的時候離開水域，徹夜尋找食物，每晚可吃下約40公斤的草跟葉子。
+          然而，雖然河馬在水中互相倚靠休息時會在水中的領域內，但吃草是屬單獨的活動，河馬在陸地上是沒有領域性的。
+        </p>
+        <p>河馬為草食性。然而，雖然少見，但河馬也有食肉的情況。河馬有食用動物屍體的紀錄，
+          在1995年7月更曾有獵殺飛羚並食用的紀錄(但河馬的胃不適合吃肉，吃肉可能是由異常行為和營養壓力引起)。但牠們幾乎不吃水生植物。
+        </p>
+        <img class="cls-img" src="/images/eat.jpeg" alt="河馬獵殺羚羊">
+        <p>河馬肥胖的身軀沒有一根毛，也沒有汗腺，卻會分泌出一種紅色的黏性液體，保護皮膚免受脫水龜裂。</p>
+        <p>河馬雖平常大群聚同一空間，但除了在母親和兒女之間外，牠們似乎並不構成社會紐帶，所以牠們也不是社會動物。牠們擠在一起的原因尚不清楚。
+          通常一頭公河馬主宰一小段平均長度為250公尺的河流，其中包含10隻雌性。最大的沼澤可以包含超過100個河馬。
+          年輕的單身公河馬可以在當家的公河馬的地盤活動，只要牠們順從當家的公河馬。當家的公河馬在自己河道內有交配權。
+        </p>
+        <p>在沼澤內，河馬傾向於按性別分隔。當河馬從水中冒出來吃草時，他們會單獨活動。河馬通過排便標記他們的領土。
+          當潑灑糞便時，河馬會旋轉尾巴將糞便分佈在更大的區域。「打哈欠」露出犬齒也是一種威脅展示。
+        </p>
+        <img class="cls-img" src="/images/haha.jpeg" alt="打哈欠的河馬">
+        <h3>危險性</h3>
+        <p>雖然河馬為植食性且外型看來十分溫和，然而事實上其性格與外型完全相反。河馬性格暴躁且攻擊性極強，其跑步時速可達四十公里，是世界上最危險的動物之一，
+          更是非洲每年殺死人最多的哺乳動物。鱷魚由於棲息地相近，時常遭到河馬攻擊並殺害。
+          河馬對人類也極具攻擊性，人類在岸邊及船上無挑釁卻遭攻擊的紀錄很普遍。雖不是為了獵食，但河馬認為受到威脅就極易主動攻擊，故接近河馬時必須保持絕對的小心。
+        </p>
+        <p>由於其巨大體型及攻擊性，除了人類之外，河馬幾乎沒有天敵。獅子或鱷魚偶爾也會捕獵處於年幼或傷病的河馬，但甚少能成功，故嚴格來說算不上是河馬的天敵。</p>
+        <p>由於牠們經常吃掉農作物，因此在這些場合人類也可能與他們發生衝突，並有可能導致雙方死亡。</p>
+        <img class="cls-img" src="/images/vs.jpeg" alt="河馬vs獅子">
+      </div>
+    </div>
+    <footer>
+      <div class="foot text-center">
+        <h1>Made by C.Y.江</h1>
+      </div>
+    </footer>
+</body>
+
+</html>
