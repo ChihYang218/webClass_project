@@ -1,6 +1,6 @@
 /* 克服 navbar fixed-top 的問題 */
 body{
-  margin-top: 60px;
+  margin-top: 100px;
 }
 
 .bg-index
@@ -24,6 +24,5 @@ body{
   margin-bottom: 50px;
   margin-top: 30px;
   border-radius: 30px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 30px;
 }

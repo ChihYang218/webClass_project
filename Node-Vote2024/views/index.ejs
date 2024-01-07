@@ -1,20 +1,105 @@
 <%- include('./header.ejs') %>
+  <link rel="stylesheet" href="/stylesheets/index.css">
 
-  <body class="text-center bg-image bg-index">
+  <body class="bg-image bg-index">
     <%- include('./partials/navbar.ejs') %>
-    <div class="">
-      <div class="row">
-        <div class="container">
-          <!-- 借用 tickcounter 的格式產出倒數計時器 -->
-          <!-- url: https://www.tickcounter.com/ -->
-          <script>(function(d, s, id) { var js, pjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//www.tickcounter.com/static/js/loader.js"; pjs.parentNode.insertBefore(js, pjs); }(document, "script", "tickcounter-sdk"));</script>
-          <a data-type="countdown" data-id="4778947" class="tickcounter" style="display:block; left:0; width:80%; height:0; position:relative; padding-bottom:24%; margin:0 auto;" title="2024 選戰倒數" href="//www.tickcounter.com/">2024 選戰倒數</a>
-        </div>
-        <div class="container init-div col-sm-9">
-
+      <div class="">
+        <div class="row">
+          <div class="container">
+            <!-- 借用 tickcounter 的格式產出倒數計時器 -->
+            <!-- url: https://www.tickcounter.com/ -->
+            <script>(function (d, s, id) { var js, pjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//www.tickcounter.com/static/js/loader.js"; pjs.parentNode.insertBefore(js, pjs); }(document, "script", "tickcounter-sdk"));</script>
+            <a data-type="countdown" data-id="4778947" class="tickcounter"
+              style="display:block; left:0; width:80%; height:0; position:relative; padding-bottom:24%; margin:0 auto;"
+              title="2024 選戰倒數" href="//www.tickcounter.com/">2024 選戰倒數</a>
+          </div>
+          <div class="container init-div col-sm-9">
+            <h4>投票是什麼時候？</h4>
+            <p>2024 年 1 月 13 日（星期六）上午 8 時至下午 4 時止。</p>
+            <br>
+            <h4>2024 總統大選重點時程</h4>
+            <h5>2023 年</h5>
+            <ul>
+              <li>11 月 20 日~11月 24 日：受理總統、副總統、立法委員<b>選舉候選人登記申請</b></li>
+              <li>12 月 11 日：<b>總統、副總統</b>選舉候選人<b>抽籤決定號次</b></li>
+              <li>12 月 20 日：<b>立法委員</b>選舉候選人<b>抽籤決定號次</b></li>
+              <li>12 月 20、26、28 日：<b>總統</b>候選人<b>電視政見發表會</b></li>
+              <li>12 月 22 日：<b>副總統</b>候選人<b>電視政見發表會</b></li>
+              <li>12 月 30 日：<b>總統</b>候選人<b>電視辯論會</b></li>
+            </ul>
+            <h5>2024 年</h5>
+            <ul>
+              <li>1 月 1 日：<b>副總統</b>候選人<b>電視辯論會</b></li>
+              <li>1 月 3 日起：<b>禁止</b>發布任何<b>選舉民調</b></li>
+              <li>1 月 5 日：<b>山地／平地原住民立委</b>候選人<b>電視政見發表會</b></li>
+              <li>1 月 8 日：<b>全國不分區及僑居國外國民立委</b>選舉<b>政黨電視政見發表會</b></li>
+              <li>1 月 13 日：<b>投票、開票</b></li>
+              <li>1 月 19 日前：<b>公告當選人名單</b></li>
+              <li>1 月 25 日前：致送當選證書</li>
+              <li>5 月 20 日：<b>總統、副總統就職</b></li>
+            </ul>
+            <br>
+            <h4>2024 選舉投票項目</h4>
+            <ul>
+              <li>總統、副總統</li>
+              <li>立法委員</li>
+              <li>政黨票</li>
+            </ul>
+            <img src="/images/index1.png" style="width: 100%;" alt="1/13 8:00-16:00 記得投票">
+            <br>
+            <br>
+            <h4>選舉民調規定</h4>
+            <p>中華民國國民、年滿 20 歲（93 年 1 月 13 日 (含) 以前出生）。</p>
+            <p>總統選舉須在台繼續居住 6 個月以上，立委選舉則須在選舉區繼續居住 4 個月以上，才符合投票的資格。</p>
+            <br>
+            <h4>投票地點是哪裡？</h4>
+            <p>查看投票通知單，或進入內政部戶政司全球資訊網的「投票地點查詢訊息」（服務開放時間 113 年 1 月 8 日上午 8:00 ~ 113 年 1 月 13 日下午
+              5:30），輸入身分證字號及出生年月日，即可查詢。</p>
+            <br>
+            <h4>要帶哪些資料去投票所？</h4>
+            <ul>
+              <li>國民身分證</li>
+              <li>投票通知單</li>
+              <li>印章</li>
+            </ul>
+            <img src="/images/index2.png" style="width: 100%;" alt="1/13 8:00-16:00 記得投票">
+            <br>
+            <br>
+            <h4>選舉民調規定</h4>
+            <p>中選會表示，已接獲多起違反選罷法的民調檢舉案件，網路民調或各式民調資訊均應載明負責調查單位、主持人、辦理時間、抽樣方式、母體數、樣本數、誤差值及經費來源。</p>
+            <p>根據選罷法規定，自投票日前十日起（113 年 1 月 3 日零時起）至投票時間截止前，不得以任何方式發布、報導、散布、評論或引述任何有關候選人或選舉的民意調查資料。</p>
+            <img src="/images/index3.png" style="width: 100%;" alt="1/3起 禁止發佈任何選舉民調">
+            <br>
+            <br>
+            <h4>投票該注意什麼？</h4>
+            <ul>
+              <li><b>6 歲以下兒童</b>可以一起進入投票所。</li>
+              <li>請<b>勿使用印章或指印圈選</b>，以免形成無效票。</li>
+              <li>請<b>勿攜帶手機或攝影器材</b>進入投票所。</li>
+              <li><b>禁止</b>故意<b>撕毀選票</b>。</li>
+              <li><b>禁止</b>將<b>選票攜帶出投票所</b>。</li>
+              <li><b>禁止喧嘩或干擾勸誘</b>他人投票或不投票。</li>
+              <li>投票日當天<b>不得宣傳候選人的相關資訊</b>，包含穿插候選人姓名、政黨名稱、標語、旗幟、看板、號次等相關影像、聲音及文字。</li>
+              <li>投票所設有<b>無障礙設施</b>，也<b>提供視障者投票輔助器</b>。</li>
+            </ul>
+            <img src="/images/index4.png" style="width: 100%;" alt="選舉時手機記得關機">
+            <br>
+            <br>
+            <h4>投票步驟</h4>
+            <ol>
+              <li>攜帶身分證、印章、投票通知單至投開票所。</li>
+              <li>出示證件給現場工作人員核對身分。</li>
+              <li>簽名或蓋章領取總統副總統選票。</li>
+              <li>領取立法委員選票。</li>
+              <li>領取政黨選票。</li>
+              <li>到圈票處投票，並使用選委會的蓋章工具圈選。</li>
+              <li>將選票投入對應票匭。</li>
+              <li>完成投票。</li>
+            </ol>
+            <img src="/images/index5.png" style="width: 100%;" alt="投票步驟">
+          </div>
         </div>
       </div>
-    </div>
   </body>
 
   <%- include('./footer.ejs') %>
