@@ -38,4 +38,17 @@ router.get('/addPoll', function(req, res, next) {
   res.render('addPoll', { title: '新增民調' });
 });
 
+router.post('/addPoll/:n1/:n2/:n3', (req, res) => {
+  req.app.locals.entries[0] += parseInt(req.params.n1);
+  req.app.locals.entries[1] += parseInt(req.params.n2);
+  req.app.locals.entries[2] += parseInt(req.params.n3);
+  let sum = 0;
+  for(let i = 0; i < 3; ++i)
+    sum += req.app.locals.entries[i];
+  for(let i = 0; i < 3; ++i)
+    req.app.locals.entries[3+i] = parseFloat(req.app.locals.entries[i]/sum).toFixed(4)*100;
+  for(let i = 0; i < 3; ++i)
+    req.app.locals.entries[3+i] = req.app.locals.entries[3+i].toFixed(2);
+})
+
 module.exports = router;

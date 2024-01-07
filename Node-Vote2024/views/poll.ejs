@@ -33,12 +33,24 @@
               </td>
             </tr>
             <tr>
-              <td class="per">0%</td>
-              <td class="per">0%</td>
-              <td class="per">0%</td>
+              <td id='r1' class="per">
+                獲得票數: <%= entries[0] %>
+                <br>
+                佔比: <span style="color: red;"><%= entries[3] %></span> %
+              </td>
+              <td id='r2' class="per">
+                獲得票數: <%= entries[1] %>
+                <br>
+                佔比: <span style="color: red;"><%= entries[4] %></span> %
+              </td>
+              <td id='r3' class="per">
+                獲得票數: <%= entries[2] %>
+                <br>
+                佔比: <span style="color: red;"><%= entries[5] %></span> %
+              </td>
             </tr>
           </table>
-          <a href="/addPoll" id="addPoll" type="button" class="btn btn-warning">新增名調</a>
+          <a href="/addPoll" id="addPoll" type="button" class="btn btn-warning">新增民調</a>
         </div>
       </div>
   </body>
