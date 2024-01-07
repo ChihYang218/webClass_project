@@ -1,0 +1,38 @@
+table {
+  width: 100%;
+  border: 6px;
+  border-style:groove;
+}
+
+th {
+  border-right: 6px;
+  border-bottom: 6px;
+  border-style:groove;
+}
+
+td {
+  border-right: 6px;
+  border-bottom: 6px;
+  border-style:groove;
+}
+
+td img {
+  width: 95% !important;
+  height: 200px !important;
+}
+
+.per {
+  font-size: 30px;
+}
+
+#addPoll {
+  margin-top: 20px;
+}
+
+#returnPoll {
+  margin-top: 20px;
+}
+
+label {
+  font-size: 20px;
+}

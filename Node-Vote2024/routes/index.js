@@ -30,4 +30,12 @@ router.get('/TPPpol', function(req, res, next) {
   res.render('TPPpol', { title: '民眾黨參選政見' });
 });
 
+router.get('/poll', function(req, res, next) {
+  res.render('poll', { title: '民調' });
+});
+
+router.get('/addPoll', function(req, res, next) {
+  res.render('addPoll', { title: '新增民調' });
+});
+
 module.exports = router;

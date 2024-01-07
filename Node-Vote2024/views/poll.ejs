@@ -1,0 +1,46 @@
+<%- include('./header.ejs') %>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <link rel="stylesheet" href="/stylesheets/poll.css">
+  <script src="/javascripts/poll.js"></script>
+
+  <body class="bg-image bg-index">
+    <%- include('./partials/navbar.ejs') %>
+      <div class="row">
+        <div class="container init-div col-sm-10 text-center">
+          <table>
+            <tr>
+              <th>
+                <img class="picon" src="/images/TPP.png" alt="台灣民眾黨">
+                1號: 民眾黨
+              </th>
+              <th>
+                <img class="picon" src="/images/DPP.png" alt="民主進步黨">
+                2號: 民進黨
+              </th>
+              <th>
+                <img class="picon" src="/images/KMT.png" alt="中國國民黨">
+                3號: 國民黨
+              </th>
+            <tr>
+              <td>
+                <img src="/images/poll1.png" alt="柯盈配">
+              </td>
+              <td>
+                <img src="/images/poll2.png" alt="柯盈配">
+              </td>
+              <td>
+                <img src="/images/poll3.png" alt="柯盈配">
+              </td>
+            </tr>
+            <tr>
+              <td class="per">0%</td>
+              <td class="per">0%</td>
+              <td class="per">0%</td>
+            </tr>
+          </table>
+          <a href="/addPoll" id="addPoll" type="button" class="btn btn-warning">新增名調</a>
+        </div>
+      </div>
+  </body>
+
+  <%- include('./footer.ejs') %>
