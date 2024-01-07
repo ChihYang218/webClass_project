@@ -1,6 +1,7 @@
 /* 克服 navbar fixed-top 的問題 */
 body{
   margin-top: 100px;
+  text-align: justify;
 }
 
 .bg-index
