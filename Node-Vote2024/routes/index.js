@@ -18,4 +18,16 @@ router.get('/TPPwiki', function(req, res, next) {
   res.render('TPPwiki', { title: '民眾黨正副總統候選人' });
 });
 
+router.get('/KMTpol', function(req, res, next) {
+  res.render('KMTpol', { title: '國民黨參選政見' });
+});
+
+router.get('/DPPpol', function(req, res, next) {
+  res.render('DPPpol', { title: '民進黨參選政見' });
+});
+
+router.get('/TPPpol', function(req, res, next) {
+  res.render('TPPpol', { title: '民眾黨參選政見' });
+});
+
 module.exports = router;
