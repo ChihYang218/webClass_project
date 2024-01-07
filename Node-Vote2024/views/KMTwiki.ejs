@@ -3,10 +3,29 @@
 
   <body class="bg-image bg-index">
     <%- include('./partials/navbar.ejs') %>
-      <div class="">
         <div class="row">
-          <div class="container init-div col-md-2 col-sm-8">
-
+          <div class="container init-div2 col-md-2 col-sm-12">
+            <nav class="navbar nav-pills nav-fill navbar-expand-sm">
+              <div class="container-fluid">
+                <ul class="navbar-nav nav-pills flex-column">
+                  <li class="nav-item nav-li">
+                    <a class="nav-link active" href="/KMTwiki">
+                      <img class="picon" src="/images/KMT.png" alt="中國國民黨">國民黨
+                    </a>
+                  </li>
+                  <li class="nav-item nav-li">
+                    <a class="nav-link" href="/DPPwiki">
+                      <img class="picon" src="/images/DPP.png" alt="民主進步黨">民進黨
+                    </a>
+                  </li>
+                  <li class="nav-item nav-li">
+                    <a class="nav-link" href="/TPPwiki">
+                      <img class="picon" src="/images/TPP.png" alt="台灣民眾黨">民眾黨
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
           </div>
           <div class="container init-div col-md-8">
             <h4>總統候選人:<span style="color: blue;"><b>侯友宜</b></span></h4>
@@ -51,7 +70,6 @@
             </p>
           </div>
         </div>
-      </div>
   </body>
 
   <%- include('./footer.ejs') %>
