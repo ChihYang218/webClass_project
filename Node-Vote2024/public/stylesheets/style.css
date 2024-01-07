@@ -1,0 +1,4 @@
+/* 克服 navbar fixed-top 的問題 */
+body{
+  margin-top: 70px;
+}
